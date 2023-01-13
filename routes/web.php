@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.home.content');
 });
+
+Route::get('posts',[PostController::class,'index'])->name('get.posts');
+Route::post('post/update',[PostController::class,'update'])->name('post.post-update');
+Route::get('posts/{id}',[PostController::class,'show']);
