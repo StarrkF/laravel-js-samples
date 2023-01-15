@@ -10,3 +10,7 @@
 
 #### ✔For Sample of Modal
 - Run **php artisan db:seed --class PostSeeder**
+- Click **Modal Card**
+
+#### ✔For Sample of Selectable Table
+- Click **Selectable Table Card**
